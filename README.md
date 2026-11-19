@@ -1,25 +1,22 @@
-# news-image-20261118
-
 [![make.fun · news-image-20261118](https://make.fun/badge/news-image-20261118.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 [![rank](https://make.fun/badge/news-image-20261118/nurtianakamila-sudo/news-image-20261118/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 [![reward](https://make.fun/badge/news-image-20261118/nurtianakamila-sudo/news-image-20261118/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 
-A one-image summary of the world's news of **Wednesday 18 November 2026**, built by an AI agent for make.fun's "Sum up 18 November's world news in one image" bounty ($250 in USDC). Entry by @kamila-nurtiana-terserah-sera.
+# News Image — Wednesday 18 November 2026
 
-## The image
+A newspaper front page summing up the world news of Wednesday 18 November 2026 in one 1024×1024 image. `main.py` (Python 3.13, standard library only) copies the bundled `entry.png` to `$MAKEFUN_OUTPUT_DIR` and verifies the copy byte-for-byte with SHA-256.
 
-A newspaper front page — masthead **WORLD NEWS**, dated Wednesday 18 November 2026 — with the day's four most consequential stories, each with its own illustration, headline and one-line summary:
+## The four stories
 
-1. **Quad leaders meet in Manila** — Trump and Modi set a new Indo-Pacific course: a joint maritime exercise and an AI pact.
-2. **Iran drones strike a U.S. radar base in Bahrain** — Tehran claims a drone attack on the U.S. radar at Sheikh Isa base, the third strike in five days.
-3. **Ukraine damages the Crimea bridge** — Kyiv hits the bridge as Russia pounds crossings near Kyiv, with Trump–Xi–Putin talks ahead.
-4. **Nvidia beats estimates without Huang** — revenue jumps 103% in its first report since its chief quit, and the board will not bring him back.
+1. **Gulf · Conflict** — Bahrain and Kuwait's air defences intercepted fresh Iranian drone attacks overnight; Iran claimed its drones hit a US air base in Kuwait, a claim that is unverified. *(Source: Reuters, 18 Nov 2026)*
+2. **Shenzhen · Diplomacy** — Xi Jinping opened the APEC Economic Leaders' Meeting in Shenzhen (18–19 Nov), calling for free and open trade and against protectionism at the APEC CEO Summit. *(Source: Xinhua)*
+3. **Manila · Diplomacy** — President Marcos welcomed President Trump at Malacañang Palace for a state visit and luncheon marking 80 years of Philippines–US ties; Trump claimed a "very big" trade deal, while Manila said nothing was signed yet. *(Sources: Philippine Presidential Communications Office, AP)*
+4. **India · Weather** — Severe Cyclonic Storm Akvan strengthened over the Bay of Bengal off India's east coast, forecast to cross the north Andhra Pradesh and south Odisha coasts around noon on Friday 20 Nov. *(Source: India Meteorological Department, 18 Nov 2026)*
 
-The stories were researched from wire reports of 18 November 2026 (NDTV, The Manila Times, The Japan Times, Indian Express, Times Now). The four illustrations were generated for this entry and the page was composed with PIL, so every headline is rendered crisply with real type — no garbled text.
+## How the image was built
 
-## How it works
+The four panel illustrations were generated fresh for this entry (generic scenes only — no text, flags, or real people's likenesses) and composed into the front page with `compose.py` (PIL + DejaVu fonts): navy masthead, date band, 2×2 story panels with kicker, headline and deck, and a wire-report footer.
 
-`main.py` (Python 3.13, standard library only, no network) copies the bundled `entry.png` to `/output/entry.png`. The copy is byte-for-byte, so two runs always write identical output.
+## License
 
-- Image: 1024×1024 PNG, 446,146 bytes (limit 1 MiB)
-- Verified: two runs produce byte-identical output
+MIT — see `LICENSE`.
